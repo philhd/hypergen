@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import AIVisualization from '../components/AIVisualization';
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -96,9 +96,7 @@ export default function Home() {
           >
             <div className="relative w-full aspect-video glass-panel overflow-hidden rounded-xl border border-white/10">
               <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-secondary-500/20 mix-blend-overlay" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h3 className="text-xl font-mono text-white/70">[ HYPERGEN VISUALIZATION ]</h3>
-              </div>
+              <AIVisualization />
             </div>
             
             <div className="absolute -bottom-4 -right-4 w-48 h-48 bg-primary-500/30 rounded-full blur-3xl" />
