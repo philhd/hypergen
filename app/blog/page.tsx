@@ -20,7 +20,7 @@ const blogPosts = [
     readTime: '9 min read',
     category: 'Research',
     featured: true,
-    image: '/blog/architecture-header.jpg', // This would be the actual image in a real implementation
+    image: '/blog/architecture-header.webp',
   },
   {
     id: 'emergent-capabilities',
@@ -131,9 +131,13 @@ export default function Blog() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="aspect-video relative rounded-xl overflow-hidden lg:aspect-auto lg:h-full">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30 z-10" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="font-mono text-sm opacity-60">[ Blog post image ]</span>
-                    </div>
+                    <Image 
+                      src={featuredPost.image}
+                      alt={featuredPost.title}
+                      fill
+                      className="object-cover"
+                      priority
+                    />
                   </div>
                   <div className="p-8 flex flex-col justify-center">
                     <div className="flex items-center mb-4">
@@ -182,9 +186,18 @@ export default function Blog() {
               >
                 <div className="aspect-video relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30 z-10" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-mono text-sm opacity-60">[ Blog post image ]</span>
-                  </div>
+                  {post.id === 'hypergen-architecture' ? (
+                    <Image 
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="font-mono text-sm opacity-60">[ Blog post image ]</span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex items-center mb-3">

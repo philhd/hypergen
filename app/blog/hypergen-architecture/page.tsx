@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
 
@@ -52,11 +53,17 @@ export default function HypergenArchitectureBlog() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <span className="font-mono text-lg opacity-60">[ Neural architecture diagram ]</span>
-                <p className="text-sm text-gray-400 mt-2">Hypergen's multimodal architecture with emergent node pathways</p>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30 z-10" />
+            <Image
+              src="/blog/architecture-header.webp"
+              alt="Neural architecture diagram"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 flex items-center justify-center z-20">
+              <div className="text-center bg-black/50 px-6 py-3 rounded-lg backdrop-blur-sm">
+                <span className="font-mono text-lg text-white/90">Hypergen's multimodal architecture with emergent node pathways</span>
               </div>
             </div>
           </motion.div>
