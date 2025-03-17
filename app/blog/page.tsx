@@ -32,7 +32,7 @@ const blogPosts = [
     readTime: '7 min read',
     category: 'Research',
     featured: false,
-    image: '/blog/emergent-capabilities.jpg', // This would be the actual image in a real implementation
+    image: '/blog/emergent-capabilites-large-nns.webp',
   },
   {
     id: 'multimodal-reasoning',
@@ -44,7 +44,7 @@ const blogPosts = [
     readTime: '6 min read',
     category: 'Technology',
     featured: false,
-    image: '/blog/multimodal-reasoning.jpg', // This would be the actual image in a real implementation
+    image: '/blog/multimodal-reasoning.webp',
   },
   {
     id: 'quantum-inspired',
@@ -56,7 +56,7 @@ const blogPosts = [
     readTime: '8 min read',
     category: 'Research',
     featured: false,
-    image: '/blog/quantum-inspired.jpg', // This would be the actual image in a real implementation
+    image: '/blog/quantum-inspired-processing.webp',
   }
 ];
 
@@ -186,18 +186,12 @@ export default function Blog() {
               >
                 <div className="aspect-video relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30 z-10" />
-                  {post.id === 'hypergen-architecture' ? (
-                    <Image 
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      className="object-cover"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="font-mono text-sm opacity-60">[ Blog post image ]</span>
-                    </div>
-                  )}
+                  <Image 
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex items-center mb-3">

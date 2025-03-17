@@ -404,10 +404,13 @@ export default function HypergenArchitectureBlog() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Link href="/blog/emergent-capabilities" className="block glass-panel rounded-xl overflow-hidden transition-all hover:scale-[1.02] hover:shadow-lg">
                 <div className="aspect-video relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-mono text-sm opacity-60">[ Blog post image ]</span>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30 z-10" />
+                  <Image 
+                    src="/blog/emergent-capabilites-large-nns.webp"
+                    alt="Emergent Capabilities in Large-Scale Neural Networks"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-xs font-medium text-primary-400 uppercase tracking-wider">Research</span>
@@ -417,10 +420,13 @@ export default function HypergenArchitectureBlog() {
               
               <Link href="/blog/multimodal-reasoning" className="block glass-panel rounded-xl overflow-hidden transition-all hover:scale-[1.02] hover:shadow-lg">
                 <div className="aspect-video relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-mono text-sm opacity-60">[ Blog post image ]</span>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30 z-10" />
+                  <Image 
+                    src="/blog/multimodal-reasoning.webp"
+                    alt="Multimodal Reasoning: Unifying Vision, Text, and Structured Data"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-xs font-medium text-primary-400 uppercase tracking-wider">Technology</span>
@@ -430,10 +436,13 @@ export default function HypergenArchitectureBlog() {
               
               <Link href="/blog/quantum-inspired" className="block glass-panel rounded-xl overflow-hidden transition-all hover:scale-[1.02] hover:shadow-lg">
                 <div className="aspect-video relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-mono text-sm opacity-60">[ Blog post image ]</span>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-secondary-500/20 to-gray-900/30 z-10" />
+                  <Image 
+                    src="/blog/quantum-inspired-processing.webp"
+                    alt="Quantum-Inspired Processing in Neural Networks"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-xs font-medium text-primary-400 uppercase tracking-wider">Research</span>
