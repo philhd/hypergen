@@ -57,7 +57,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className="gradient-text">Hypergen</span><br />
+              <span className="gradient-text pb-2 inline-block">Hypergen</span><br />
               <span className="leading-tight text-3xl md:text-5xl lg:text-6xl">
                 The Future of AI is Here
               </span>

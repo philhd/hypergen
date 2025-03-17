@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-primary-500 to-secondary-500 flex items-center justify-center">
               <span className="text-white font-bold text-xl">H</span>
             </div>
-            <span className="text-xl font-bold gradient-text">Hypergen</span>
+            <span className="text-xl font-bold gradient-text leading-relaxed">Hypergen</span>
           </Link>
           
           {/* Desktop Navigation */}

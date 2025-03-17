@@ -10,7 +10,7 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-400 to-secondary-400 inline-block text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-primary-400 to-secondary-400 inline-block text-transparent bg-clip-text leading-relaxed py-1;
   }
   
   .glass-panel {
